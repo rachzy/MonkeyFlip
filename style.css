@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(30, 30, 30, 1);
+  overflow-x: hidden;
+
+  height: 100vh;
+}
+
+img.title {
+  width: 100vh;
+  margin-bottom: 10vh;
+}
+
+button.play-btn {
+  transition: 0.2s all;
+}
+
+button.play-btn:hover {
+  transform: scale(1.1);
+}
+
+button.play-btn img {
+  width: 30vh;
+}
+
+img.decoration-banner {
+  position: absolute;
+  width: 30vh;
+
+  top: 0;
+  right: 0;
+}
+
+div.bottom-btns {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+div.bottom-btns button {
+  margin: 5vh 4vh;
+  transition: 0.2s all;
+}
+
+div.bottom-btns button:hover {
+  transform: scale(1.1);
+}
+
+div.bottom-btns button img {
+  width: 20vh;
+}
