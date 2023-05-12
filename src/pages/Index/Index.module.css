@@ -1,0 +1,74 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes hopIn {
+  0% {
+    margin-top: -100vh;
+  }
+  30% {
+    margin-top: -100vh;
+  }
+  50% {
+    margin-top: -15vh;
+  }
+  75% {
+    margin-top: -20vh;
+  }
+  100% {
+    margin-top: 0;
+  }
+}
+
+img.title {
+  width: 100vh;
+  margin-bottom: 10vh;
+
+  animation: fadeIn 1s;
+}
+
+img.decorationBanner {
+  position: absolute;
+  width: 30vh;
+
+  top: 0;
+  right: 0;
+
+  animation: hopIn 2s;
+}
+
+div.bottomBtns {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+div.bottomBtns button {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  margin: 5vh 4vh;
+  transition: 0.2s all;
+
+  animation: fadeIn 1s;
+}
+
+div.bottomBtns button:hover {
+  transform: scale(1.1);
+}
+
+div.bottomBtns button img {
+  width: 20vh;
+}

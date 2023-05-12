@@ -1,0 +1,45 @@
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+
+  20% {
+    opacity: 0%;
+  }
+
+  100% {
+    opacity: 0%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+:root,
+main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgba(30, 30, 30, 1);
+  overflow-x: hidden;
+
+  width: 100vw;
+  height: 100vh;
+
+  transition: 0.5s all;
+}
+
+main.slideAway {
+  margin-left: 100%;
+}
+
+main.slideAway img {
+  animation: fadeOut 1s;
+}

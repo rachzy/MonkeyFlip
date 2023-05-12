@@ -1,0 +1,29 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+button.playBtn {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.2s all;
+}
+
+button.playBtn.fadeIn {
+  animation: fadeIn 3s;
+}
+
+button.playBtn:hover {
+  transform: scale(1.1);
+}
+
+button.playBtn img {
+  width: 30vh;
+}

@@ -23,13 +23,13 @@ body {
   height: 100vh;
 }
 
+button.play-btn {
+  transition: 0.2s all;
+}
+
 img.title {
   width: 100vh;
   margin-bottom: 10vh;
-}
-
-button.play-btn {
-  transition: 0.2s all;
 }
 
 button.play-btn:hover {
