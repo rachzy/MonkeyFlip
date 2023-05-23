@@ -20,7 +20,7 @@
 
 body,
 :root,
-main {
+main.mainMenu {
   display: flex;
   flex-direction: column;
 

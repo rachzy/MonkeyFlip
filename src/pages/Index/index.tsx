@@ -22,7 +22,7 @@ const Index = () => {
     }, 1000);
   };
   return (
-    <main ref={mainRef}>
+    <main ref={mainRef} className="mainMenu">
       <img
         className={classes.decorationBanner}
         src={monkeyIcon}
