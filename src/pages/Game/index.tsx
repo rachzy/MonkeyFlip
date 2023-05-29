@@ -1,13 +1,15 @@
 import React, { useEffect, useState } from "react";
+import Monkey from "../../components/Monkey/index.js";
 import classes from "./Game.module.css";
 
-interface IPlatform {
+export interface IPlatform {
   top: number;
   width: number;
   left: number;
 }
 
 const Game = () => {
+
   const [platforms, setPlatforms] = useState<IPlatform[]>([
     {
       top: 30,
@@ -20,25 +22,26 @@ const Game = () => {
       left: 2,
     },
     {
-        top: 30,
-        width: 0,
-        left: 0,
-      },
-      {
-        top: 60,
-        width: 0,
-        left: 0,
-      },
+      top: 30,
+      width: 0,
+      left: 0,
+    },
+    {
+      top: 60,
+      width: 0,
+      left: 0,
+    },
   ]);
   const [currentPlatformPositions, setPlatformPositions] = useState([
     platforms[0].left,
     platforms[1].left,
     platforms[2].left,
-    platforms[3].left
+    platforms[3].left,
   ]);
   const [currentSpeed, setCurrentSpeed] = useState(50);
   const [gameLoop, setGameloop] = useState<number>();
 
+  // Main game loop
   useEffect(() => {
     if (gameLoop) {
       clearInterval(gameLoop);
@@ -58,9 +61,10 @@ const Game = () => {
                 };
               const width = Math.floor(Math.random() * (100 - 20 + 1) + 20);
 
-              if(currentPlatformPositions.includes(100 - width)) return {
-                ...platform
-              }
+              if (currentPlatformPositions.includes(100 - width))
+                return {
+                  ...platform,
+                };
               return {
                 ...platform,
                 width: width,
@@ -92,9 +96,10 @@ const Game = () => {
       );
     });
   }
+
   return (
     <main className={classes.game}>
-      {renderPlatforms()}{" "}
+      {renderPlatforms()} <Monkey platforms={platforms} />
       <div
         className={classes.platform}
         style={{
