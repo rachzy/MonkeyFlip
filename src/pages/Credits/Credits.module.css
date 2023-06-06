@@ -1,0 +1,66 @@
+main.main {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/* BACK-BUTTON */
+
+main.main button {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  left: 0;
+  top: 0;
+  margin: 5vh;
+
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+main.main button:hover {
+  transform: scale(1.1);
+}
+
+main.main button h2 {
+  color: white;
+  font-size: 8vh;
+  margin-left: 3vh;
+}
+
+main.main button img {
+  width: 5vh;
+}
+
+/* DEVS-CONTAINER */
+
+div.devsContainer {
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 10vw;
+}
+
+div.devsContainer div {
+  margin-block: 5vh;
+}
+
+div.devsContainer h1 {
+  font-size: 12vh;
+  color: #a67370;
+}
+
+div.devsContainer p {
+  font-size: 6vh;
+  color: white;
+}

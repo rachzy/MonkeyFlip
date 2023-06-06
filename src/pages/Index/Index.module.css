@@ -53,22 +53,6 @@ div.bottomBtns {
   bottom: 0;
 }
 
-div.bottomBtns button {
-  background: none;
-  border: none;
-
-  cursor: pointer;
-
-  margin: 5vh 4vh;
-  transition: 0.2s all;
-
-  animation: fadeIn 1s;
-}
-
-div.bottomBtns button:hover {
-  transform: scale(1.1);
-}
-
 div.bottomBtns button img {
   width: 20vh;
 }

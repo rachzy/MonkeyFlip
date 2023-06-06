@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
+
 @keyframes fadeOut {
   0% {
     opacity: 100%;
@@ -16,6 +18,10 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+
+  font-family: "VT323", monospace;
+  font-style: normal;
+  font-weight: 400;
 }
 
 body,

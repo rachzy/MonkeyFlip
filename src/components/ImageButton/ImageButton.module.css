@@ -1,0 +1,15 @@
+button.imageButton {
+  background: none;
+  border: none;
+
+  cursor: pointer;
+
+  margin: 5vh 4vh;
+  transition: 0.2s all;
+
+  animation: fadeIn 1s;
+}
+
+button.imageButton:hover {
+  transform: scale(1.1);
+}

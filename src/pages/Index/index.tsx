@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import classes from "./index.module.css";
 
 import PlayButton from "../../components/PlayButton";
+import ImageButton from "../../components/ImageButton";
 
 import monkeyIcon from "../../assets/homeIcons/monkeyIcon.png";
 import titleBanner from "../../assets/homeIcons/title.png";
@@ -32,12 +33,8 @@ const Index = () => {
       <PlayButton fadeInAnimation onClick={handleStartButtonClick} />
 
       <div className={classes.bottomBtns}>
-        <button>
-          <img src={creditsButton} alt="credits 8bit button" />
-        </button>
-        <button>
-          <img src={helpButton} alt="help 8bit button" />
-        </button>
+        <ImageButton onClick={() => navigate("/credits")} src={creditsButton} />
+        <ImageButton src={helpButton} />
       </div>
     </main>
   );
