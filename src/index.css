@@ -22,6 +22,12 @@
   font-family: "VT323", monospace;
   font-style: normal;
   font-weight: 400;
+
+  color: white;
+}
+
+p {
+  font-size: 6vh;
 }
 
 body,

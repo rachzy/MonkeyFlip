@@ -1,0 +1,31 @@
+button.backButton {
+  display: flex;
+  position: absolute;
+
+  align-items: center;
+
+  background: none;
+  outline: none;
+  border: none;
+
+  left: 0;
+  top: 0;
+  margin: 5vh;
+
+  cursor: pointer;
+  transition: 0.2s all;
+}
+
+button.backButton:hover {
+  transform: scale(1.1);
+}
+
+button.backButton h2 {
+  color: white;
+  font-size: 8vh;
+  margin-left: 3vh;
+}
+
+button.backButton img {
+  width: 5vh;
+}
