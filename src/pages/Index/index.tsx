@@ -34,7 +34,7 @@ const Index = () => {
 
       <div className={classes.bottomBtns}>
         <ImageButton onClick={() => navigate("/credits")} src={creditsButton} />
-        <ImageButton src={helpButton} />
+        <ImageButton onClick={() => navigate("/help")} src={helpButton} />
       </div>
     </main>
   );

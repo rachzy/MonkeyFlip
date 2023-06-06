@@ -11,23 +11,25 @@ main.main {
   display: flex;
   flex-direction: column;
 
-  justify-content: center;
-
   width: 100vw;
-  height: 100vh;
+  padding-left: 10vw;
 
   animation: fadeIn 0.5s;
 }
 
-/* DEVS-CONTAINER */
-
-div.devsContainer {
+main.main p {
   display: flex;
-  flex-direction: column;
 
-  padding-left: 10vw;
+  align-items: center;
+  margin-block: 4vh;
+
+  gap: 2vh;
 }
 
-div.devsContainer div {
-  margin-block: 5vh;
+main.main img.spacebar {
+  width: 15vh;
+}
+
+main.main img.arrow {
+  width: 6vh;
 }
