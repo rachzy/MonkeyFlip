@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./BackButton.module.css";
 
 import backButton from "../../assets/backButton.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Help.module.css";
 
 import Title from "../../components/Title";

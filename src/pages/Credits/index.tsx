@@ -1,4 +1,3 @@
-import React from "react";
 import classes from "./Credits.module.css";
 
 import BackButton from "../../components/BackButton";
