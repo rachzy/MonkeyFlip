@@ -19,7 +19,7 @@ const Index = () => {
   const handleStartButtonClick = () => {
     mainRef.current.classList.toggle("slideAway");
     setTimeout(() => {
-      navigate("/game");
+      window.location.href = "https://rachzy.github.io/monkey-flip/";
     }, 1000);
   };
   return (

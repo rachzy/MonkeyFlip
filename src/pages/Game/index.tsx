@@ -9,16 +9,15 @@ export interface IPlatform {
 }
 
 const Game = () => {
-
   const [platforms, setPlatforms] = useState<IPlatform[]>([
     {
       top: 30,
-      width: 200,
+      width: 100,
       left: 2,
     },
     {
       top: 60,
-      width: 200,
+      width: 100,
       left: 2,
     },
     {
@@ -35,8 +34,8 @@ const Game = () => {
   const [currentPlatformPositions, setPlatformPositions] = useState([
     platforms[0].left,
     platforms[1].left,
-    platforms[2].left,
-    platforms[3].left,
+    // platforms[2].left,
+    // platforms[3].left,
   ]);
   const [currentSpeed, setCurrentSpeed] = useState(50);
   const [gameLoop, setGameloop] = useState<number>();
